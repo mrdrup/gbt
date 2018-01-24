@@ -186,7 +186,7 @@ unset GBT_CAR_TIME_FORMAT
 unset GBT_CARS
 ### Themes
 # Load theme
-source /usr/share/gbt/themes/square_brackets_multiline
+source /usr/share/gbt/themes/local/square_brackets_multiline
 ```
 
 
@@ -195,7 +195,7 @@ Configuration
 
 The prompt (train) is assembled from several elements (cars). The look and
 behavior of whole train as well as each car can be influenced by a set of
-environment variables. Majority of the 
+environment variables. Majority of the
 
 
 ### Colors

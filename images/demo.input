@@ -4,7 +4,7 @@ true
 export GBT_CAR_STATUS_FORMAT=' {{ Symbol }} {{ Code }} '
 ls /root
 asdasd
-clear                                                                      
+clear
 ### Os car demo
 export GBT_CAR_OS_NAME='ubuntu'
 export GBT_CAR_OS_NAME='gentoo'
@@ -12,7 +12,7 @@ export GBT_CAR_OS_NAME='darwin'
 export GBT_CAR_OS_NAME='windows'
 export GBT_CAR_OS_NAME='linux'
 unset GBT_CAR_OS_NAME
-clear                                                                      
+clear
 ### Hostname car demo
 export GBT_CAR_HOSTNAME_FORMAT=' {{ User }} '
 export GBT_CAR_HOSTNAME_FORMAT=' {{ Host }} '
@@ -20,7 +20,7 @@ unset GBT_CAR_HOSTNAME_FORMAT
 export GBT_CAR_HOSTNAME_USER_FG='yellow'
 export GBT_CAR_HOSTNAME_HOST_FG='green'
 unset GBT_CAR_HOSTNAME_USER_FG GBT_CAR_HOSTNAME_HOST_FG
-clear                                                                      
+clear
 ### Dir car demo
 cd /
 cd /usr/share/doc/sudo
@@ -28,11 +28,11 @@ export GBT_CAR_DIR_DEPTH='3'
 export GBT_CAR_DIR_DEPTH='9999'
 unset GBT_CAR_DIR_DEPTH
 cd ~
-clear                                                                      
+clear
 ### Sign car demo
 sudo su -
 exit
-clear                                                                      
+clear
 ### Time car demo
 export GBT_CARS='Status, Os, Time, Hostname, Dir, Sign'
 export GBT_CAR_TIME_TIME_FORMAT='03:04:05 PM'
@@ -41,14 +41,14 @@ export GBT_CAR_TIME_DATE_FG='black'
 unset GBT_CAR_TIME_DATE_FG GBT_CAR_TIME_BG
 export GBT_CAR_TIME_FORMAT=' {{ Time }} '
 unset GBT_CAR_TIME_FORMAT GBT_CARS
-clear                                                                      
+clear
 ### ExecTime car demo
 export GBT_CARS='Status, Os, ExecTime, Hostname, Dir, Sign'
 source /usr/share/gbt/sources/exec_time/zsh
 export GBT_CAR_EXECTIME_PRECISION=4
 ls -la /usr/share/gbt/
 unset GBT_CAR_EXECTIME_PRECISION GBT_CARS
-clear                                                                      
+clear
 ### Git car demo
 cd /tmp
 mkdir test.git
@@ -73,7 +73,7 @@ git reset --hard HEAD~1
 git commit --amend -am "Amending"
 cd ~
 rm -fr /tmp/test{,.git}
-clear                                                                      
+clear
 ### PyVirtEnv car demo
 virtualenv /tmp/test
 export GBT_CARS='Status, Os, Hostname, Dir, PyVirtEnv, Sign'
@@ -82,12 +82,12 @@ source /tmp/test/bin/activate
 deactivate
 rm -fr /tmp/test
 unset GBT_CARS
-clear                                                                      
+clear
 ### Custom car demo
 export GBT_CARS='Status, Os, Custom, Hostname, Dir, Sign'
 export GBT_CAR_CUSTOM_TEXT_CMD="uptime | grep -Po '(?<=: )\d+\.\d+'"
 unset GBT_CARS GBT_CAR_CUSTOM_TEXT_CMD
-clear                                                                      
+clear
 ### Theme demo
-source /usr/share/gbt/themes/square_brackets_multiline
+source /usr/share/gbt/themes/local/square_brackets_multiline
 That's all ;o)
